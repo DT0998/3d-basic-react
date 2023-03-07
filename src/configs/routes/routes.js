@@ -1,15 +1,16 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "../../pages/home";
+import { createBrowserRouter } from "react-router-dom";
 import NotFound from "../../pages/404";
+import Home from "../../pages/home";
 
-function Routes() {
-  return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="*" component={NotFound} />
-    </Switch>
-  );
-}
+const Routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+  {
+    path: "*",
+    element: <NotFound/>,
+  },
+]);
 
 export default Routes;
