@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import Box from "../../components/Box";
 import Button from "../../components/Button";
 import classes from "./home.module.css";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { MeshReflectorMaterial, OrbitControls, Stars } from "@react-three/drei";
 import Plane from "../../components/Plane";
 
 function Home() {
@@ -18,6 +18,8 @@ function Home() {
           <pointLight position={[-10, 10, -10]} />
           <Box position={[0, 2, 0]} color="violet"/>
           <Plane position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]} color="yellow" />
+          <Plane position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]} color="yellow" />
+          <MeshReflectorMaterial />
         </Canvas>
         <div className={classes.overlay}>
           <Button></Button>
