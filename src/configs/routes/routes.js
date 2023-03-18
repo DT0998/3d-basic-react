@@ -1,15 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import NotFound from "../../pages/404";
-import Home from "../../pages/home";
+import SceneGalaxy from "../../pages/SceneGalaxy";
 
 const Routes = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <SceneGalaxy />,
   },
   {
     path: "*",
-    element: <NotFound/>,
+    element: <NotFound />,
   },
 ]);
 
