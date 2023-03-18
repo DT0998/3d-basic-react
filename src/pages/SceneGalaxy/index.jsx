@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import React, { Fragment } from "react";
-import Galaxy from "../../components/Galaxy";
+import MilkyWay from "../../components/MilkyWay";
 import classes from "./scenegalaxy.module.css";
 import { OrbitControls, Stars } from "@react-three/drei";
 
@@ -21,7 +21,7 @@ function SceneGalaxy() {
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.3} />
           <pointLight position={[-10, 10, -10]} />
-          <Galaxy />
+          <MilkyWay />
           <pointLight position={[10, 10, 10]} />
         </Canvas>
       </div>

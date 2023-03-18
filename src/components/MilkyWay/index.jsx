@@ -2,12 +2,12 @@ import { useEffect, useMemo } from "react";
 import { SphereGeometry, Vector3 } from "three";
 import { useFrame, useThree } from "@react-three/fiber";
 
-// configure galaxy layers
 
-function Galaxy() {
+function MilkyWay() {
   const { scene } = useThree();
   console.log("Galaxy scene: ", scene);
-  const parameters = {
+  // configure MilkyWay layers
+  const configMilkyWay = {
     count: 100000,
     size: 0.01,
     radius: 5,
@@ -26,4 +26,4 @@ function Galaxy() {
   );
 }
 
-export default Galaxy;
+export default MilkyWay;
